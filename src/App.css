@@ -1,0 +1,89 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+  border-style: solid;
+  border-left-color: lightpink;
+  border-top-color: lightpink;
+  border-right-color: lightblue;
+  border-bottom-color: lightblue;
+  position: relative;
+ margin-left: 10%;
+ padding-top: 30px;
+ margin-top: 50px;
+  
+}
+
+hr{
+  border: 1px solid lightgray;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.name-list-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
+  padding: 15px;
+
+  
+}
+.name-list-blue{
+  width: 80px;
+  height: 20px;
+  padding: 2px;
+  margin: 2px;
+  background-color: lightblue;
+border-radius: 10px;
+font-size: 14px;
+}
+.name-list-pink{
+  width: 80px;
+  height: 20px;
+  padding: 2px;
+  margin: 2px;
+  background-color: lightpink;
+border-radius: 10px;
+font-size: 14px;
+}
+input{
+  padding: 5px;
+ 
+
+
+}
+.all-name{
+  padding: 5px;
+  background-color: lightgray;
+  border-radius: 5px;
+  margin: 3px;
+
+}
+
+.girl-name{
+  padding: 5px;
+  background-color: lightpink;
+  border-radius: 5px;
+  margin: 3px;
+
+}
+.boy-name{
+  padding: 5px;
+  background-color: lightblue;
+  border-radius: 5px;
+  margin: 3px;
+
+}
+.favourite{
+
+ display: flex;
+ justify-content: flex-start;
+ padding-left: 50px;
+ color: lightgray;
+
+}

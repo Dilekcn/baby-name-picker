@@ -8,20 +8,21 @@ import FavoritesList from './FavoritesList';
 
 const names =Data.sort((a, b) => a.name.localeCompare(b.name));
 
-
+const list = ["a","b","c"]
 function App() {
 
   const[search,setSearch]= useState("");
   const[searchResults,setSearchResults] = useState([]);
+  const [favorite, setFavorite] = useState([]);
 
   
   useEffect(() =>{
       const results = names.filter(person =>
           person.name.toLowerCase().includes(search.toLowerCase())
       );
+     
       setSearchResults(results);
   },[search]);
-  
   
 
 
@@ -30,11 +31,12 @@ function App() {
     <div className="App"> 
     <div className="container">   
       <SearchName data={names} search={search} setSearch={setSearch} setSearchResults={setSearchResults}/>   
-      <FavoritesList data={names} />
+      <FavoritesList data={names} favorite={favorite} />
       <hr/>
-      <NameList data={names} searchResults={searchResults} setSearchResults={setSearchResults} />
+      <NameList data={names}  searchResults={searchResults} setSearchResults={setSearchResults} />
       <hr/>
     </div>
+  
     </div>  
   );
 }

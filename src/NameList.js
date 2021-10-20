@@ -1,7 +1,7 @@
 import React  from 'react'
 
 
-const NameList = ({searchResults}) => {
+const NameList = ({searchResults,handleChange,listFilter}) => {
 
  
  
@@ -9,7 +9,7 @@ const NameList = ({searchResults}) => {
   
            <div className="name-list-container">             
              {searchResults.map((name,i)=>(
-                 <span key={i} className={name.sex === "f" ? "name-list-pink" : "name-list-blue"} >{name.name}</span>
+                 <span  onClick={handleChange} key={i}  className={name.sex === "f" ? "name-list-pink" : "name-list-blue"} >{name.name}</span>
              ))}
 
             </div>

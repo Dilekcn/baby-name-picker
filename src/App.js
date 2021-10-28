@@ -52,6 +52,8 @@ function App() {
           searchResults={searchResults}
           setSearchResults={setSearchResults}
         />
+        <hr />
+
       </div>
     </div>
   );

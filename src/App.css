@@ -87,3 +87,16 @@ input{
  color: lightgray;
 
 }
+.multicolortext {
+  background-image: linear-gradient(to left,  violet, indigo, blue, pink, yellow, orange, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.input_search{
+  border: none;
+
+  padding: 10px;
+  background-image: linear-gradient(to right,lightgray, pink, lightblue);
+}

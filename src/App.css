@@ -95,8 +95,10 @@ input{
   color: transparent;
 }
 .input_search{
-  border: none;
-
+  border: none !important;
   padding: 10px;
   background-image: linear-gradient(to right,lightgray, pink, lightblue);
+}
+.input_search:hover, .input_search:focus {
+  outline: none;
 }

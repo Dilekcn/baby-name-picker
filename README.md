@@ -1,5 +1,5 @@
 
-https://dilek-baby-name-picker.netlify.app/
+https://baby-name-picker.netlify.app/
 
 # Getting Started with Create React App
 
